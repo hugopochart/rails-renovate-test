@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "config:base",
+    ":timezone(Europe/Paris)",
+    ":disableRateLimiting"
+  ],
+  "hostRules": [
+    {
+      "matchHost": "enterprise.contribsys.com",
+      "hostType": "rubygems",
+      "token": "hIwDOI+fPlB83KQBBACMZt4Wfe33PpdpS5G0RtRmTZh3+BAgNZ7oZUMuG6YvpB9LhBaI+AcwpoiepXtWD17QRs/m+X8lgrVzS+/dv9HGwP1VqUkGXFrgKyjCTp/coNuPz3TzmIuLcL/9tNCATnReYYVE09tH/n2IhQF3OvBi6CkcluZz1w6G4dGfFESYmdJfAW6WuvslMV8hIQ+DEf8fupAiiKk6rfyM9P/SBmt0V2N/zgTR5T6wYZyK538juZrOOMlanByDpYgkFN7UHS/t3pq6lnuRRY2gEs2xm98nzSCI9QBturhJSUXfWJUjnHc==fIro"
+    }
+  ],
+  "baseBranches": ["master"],
+
+  "stabilityDays": 2,
+
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": false
+  },
+
+  "commitMessagePrefix": ":wrench: (chore)",
+  "labels": ["renovate"],
+
+  "packageRules": [
+    {
+      "description": "Update the lock file when in-range updates are available, otherwise replace for updates out of range.",
+      "matchDatasources": ["rubygems"],
+      "rangeStrategy": "update-lockfile"
+    },
+    {
+      "matchPackageNames": ["sidekiq-ent", "sidekiq-pro"],
+      "registryUrls": ["https://enterprise.contribsys.com"]
+    }
+  ]
+}
