@@ -22,5 +22,5 @@ gem "importmap-rails"
 
 source "https://enterprise.contribsys.com/" do
   gem "sidekiq-ent", "2.5.0"
-  gem "sidekiq-pro", "5.5.0"
+  gem "sidekiq-pro", "5.5.3"
 end
