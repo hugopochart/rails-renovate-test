@@ -21,6 +21,6 @@ gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 
 source "https://enterprise.contribsys.com/" do
-  gem "sidekiq-ent", "2.5.0"
+  gem "sidekiq-ent", "2.5.2"
   gem "sidekiq-pro", "5.5.0"
 end
