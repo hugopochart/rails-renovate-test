@@ -1,7 +1,7 @@
 GEM
   remote: https://enterprise.contribsys.com/
   specs:
-    sidekiq-ent (2.5.0)
+    sidekiq-ent (2.5.2)
       einhorn (>= 0.7.4)
       sidekiq (>= 6.5.0)
       sidekiq-pro (>= 5.5.0)
@@ -179,7 +179,7 @@ DEPENDENCIES
   importmap-rails
   puma (= 5.0.0)
   rails (= 7.0.4)
-  sidekiq-ent (= 2.5.0)!
+  sidekiq-ent (= 2.5.2)!
   sidekiq-pro (= 5.5.0)!
   sprockets-rails
   sqlite3 (= 1.4.0)
